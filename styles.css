@@ -12,22 +12,26 @@ body {
     /* Để hình nền bao phủ toàn bộ trang */
     background-position: center;
     /* Đặt hình nền ở giữa */
+    min-height: 100vh;
+    /* Chiều cao tối thiểu là 100% chiều cao của viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .container {
     max-width: 600px;
-    margin: 100px auto;
+    margin: auto;
     padding: 20px;
-    border: 2px solid #d32f2f;
-    /* Viền màu đỏ */
+    /* border: 2px solid #d32f2f; Viền màu đỏ - đã bị loại bỏ */
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(95, 94, 94, 0.9);
     /* Nền trắng với độ trong suốt */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    color: #d32f2f;
+    color: #e8e2e2;
     /* Màu đỏ tươi */
     font-size: 36px;
     margin-bottom: 20px;
@@ -37,7 +41,7 @@ h1 {
 }
 
 .logo {
-    margin-right: 20px;
+    margin-right: 10px;
     /* Khoảng cách giữa logo và chữ */
     width: 100px;
     /* Chiều rộng của logo */
@@ -74,8 +78,7 @@ button:hover {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
-    border: 2px solid #d32f2f;
-    /* Viền màu đỏ */
+    /* border: 2px solid #d32f2f; Viền màu đỏ - đã bị loại bỏ */
     border-radius: 10px;
 }
 
@@ -94,4 +97,29 @@ button:hover {
 #downloadButton:hover {
     background-color: #45a049;
     /* Màu xanh lá cây đậm khi hover */
+}
+
+footer {
+    padding: 0px;
+    background-color: #d32f2f;
+    /* Màu nền đỏ */
+    color: white;
+    /* Màu chữ trắng */
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    margin-left: 10px;
+    /* Khoảng cách giữa chữ và logo */
+    width: 30px;
+    /* Chiều rộng của logo */
+    height: auto;
+    /* Tự động điều chỉnh chiều cao theo tỷ lệ */
 }
