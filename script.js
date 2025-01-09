@@ -36,4 +36,4 @@ function createFallingFlower() {
 }
 
 // Tạo hoa rơi mỗi 4000ms
-setInterval(createFallingFlower, 4000);
+setInterval(createFallingFlower, 2000);
