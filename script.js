@@ -25,7 +25,7 @@ function createFallingFlower() {
     flower.src = flowerTypes[Math.floor(Math.random() * flowerTypes.length)];
     flower.className = 'flower';
     flower.style.left = Math.random() * 100 + 'vw';
-    flower.style.animationDuration = Math.random() * 30 + 20 + 's'; // Thời gian rơi ngẫu nhiên từ 2 đến 5 giây
+    flower.style.animationDuration = Math.random() * 60 + 120 + 's'; // Thời gian rơi ngẫu nhiên từ 2 đến 5 giây
 
     flowerContainer.appendChild(flower);
 
