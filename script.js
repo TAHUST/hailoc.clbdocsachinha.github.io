@@ -25,7 +25,7 @@ function createFallingFlower() {
     flower.src = flowerTypes[Math.floor(Math.random() * flowerTypes.length)];
     flower.className = 'flower';
     flower.style.left = Math.random() * 100 + 'vw';
-    flower.style.animationDuration = Math.random() * 10 + 10 + 's'; // Thời gian rơi ngẫu nhiên từ 2 đến 5 giây
+    flower.style.animationDuration = Math.random() * 5 + 5 + 's'; // Thời gian rơi ngẫu nhiên từ 2 đến 5 giây
 
     flowerContainer.appendChild(flower);
 
@@ -35,9 +35,9 @@ function createFallingFlower() {
     });
 }
 // Kiểm tra kích thước màn hình để điều chỉnh tần suất tạo hoa
-let intervalTime = 1000; // Mặc định là 1 giây
+let intervalTime = 5000; // Mặc định là 5 giây
 if (window.innerWidth <= 768) {
-    intervalTime = 3000; // Tăng lên 3 giây trên thiết bị di động
+    intervalTime = 10000; // Tăng lên 10 giây trên thiết bị di động
 }
 
 // Tạo hoa rơi mỗi intervalTime ms
