@@ -152,3 +152,9 @@ footer p {
         transform: translateY(100vh);
     }
 }
+/* Media query để điều chỉnh tốc độ hoa rơi trên thiết bị di động */
+@media (max-width: 768px) {
+    .flower {
+        animation-duration: 10s; /* Tăng thời gian rơi lên 10 giây trên thiết bị di động */
+    }
+}
