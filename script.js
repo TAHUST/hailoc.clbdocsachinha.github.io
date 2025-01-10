@@ -35,9 +35,9 @@ function createFallingFlower() {
     });
 }
 // Kiểm tra kích thước màn hình để điều chỉnh tần suất tạo hoa
-let intervalTime = 5000; // Mặc định là 5 giây
+let intervalTime = 3000; // Mặc định là 3 giây
 if (window.innerWidth <= 768) {
-    intervalTime = 10000; // Tăng lên 10 giây trên thiết bị di động
+    intervalTime = 7000; // Tăng lên 7 giây trên thiết bị di động
 }
 
 // Tạo hoa rơi mỗi intervalTime ms
