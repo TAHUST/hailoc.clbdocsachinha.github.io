@@ -34,6 +34,11 @@ function createFallingFlower() {
         flowerContainer.removeChild(flower);
     });
 }
+// Kiểm tra kích thước màn hình để điều chỉnh tần suất tạo hoa
+let intervalTime = 1000; // Mặc định là 1 giây
+if (window.innerWidth <= 768) {
+    intervalTime = 3000; // Tăng lên 3 giây trên thiết bị di động
+}
 
-// Tạo hoa rơi mỗi 4000ms
-setInterval(createFallingFlower, 4000);
+// Tạo hoa rơi mỗi intervalTime ms
+setInterval(createFallingFlower, intervalTime);
