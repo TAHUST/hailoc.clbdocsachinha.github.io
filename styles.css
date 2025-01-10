@@ -142,7 +142,8 @@ footer p {
     height: auto;
     animation: fall linear infinite;
 }
-
+.falling-element {
+    animation: fall 15s ease-in-out;
 @keyframes fall {
     0% {
         transform: translateY(-100%);
